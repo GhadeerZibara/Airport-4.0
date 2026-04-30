@@ -80,5 +80,4 @@ python-dotenv
 
 ## Author
 
-Ghadeer Zibara
-Lebanese American University, Computer Engineering
+Ghadeer Zibara, Lebanese American University, Computer Engineering
