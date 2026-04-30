@@ -1,11 +1,7 @@
 """
-select_zones.py
----------------
-Interactive tool for defining queue zone polygons on a video frame.
-
 Run this script before queue_system.py whenever you switch to a new camera
-or scene. The output is a ZONES dictionary you paste directly into queue_system.py.
-
+or scene. 
+The output is a ZONES dictionary you paste directly into queue_system.py.
 Controls:
     Left click  — add a point to the current zone
     ENTER       — finish zone, then type its name in the window and press ENTER again
@@ -17,7 +13,7 @@ Controls:
 import cv2
 import numpy as np
 
-# --- Configuration ---
+
 
 VIDEO_PATH = r"videos\supermarket.mp4"
 
@@ -30,7 +26,7 @@ ZONE_COLOURS = [
     (0,   255, 255),
 ]
 
-# --- State ---
+
 
 zones       = {}
 current_pts = []
@@ -94,7 +90,6 @@ def mouse_callback(event, x, y, flags, param):
         current_pts.append((x, y))
 
 
-# --- Setup ---
 
 video = cv2.VideoCapture(VIDEO_PATH)
 ret, base_frame = video.read()

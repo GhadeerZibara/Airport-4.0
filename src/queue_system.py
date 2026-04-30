@@ -119,7 +119,7 @@ fps = cap.get(cv2.CAP_PROP_FPS) or 30.0
 
 writer = cv2.VideoWriter(OUTPUT, cv2.VideoWriter_fourcc(*"mp4v"), fps, (w, h))
 
-# Per-zone state — one instance of each per zone
+
 analytics_dict = {zone: QueueAnalytics()        for zone in ZONES}
 region_polys   = {zone: np.array(pts, np.int32) for zone, pts in ZONES.items()}
 prev_ids       = {zone: set()                   for zone in ZONES}
