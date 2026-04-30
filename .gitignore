@@ -1,0 +1,35 @@
+# Environment & credentials
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+.venv/
+
+# Output files
+output/
+*.mp4
+
+# Models 
+models/
+
+# Videos 
+videos/
+
+# Output files
+output/*
+!output/.gitkeep
+*.mp4
+
+# Models 
+models/*
+!models/.gitkeep
+
+# Videos 
+videos/*
+!videos/.gitkeep
+
+# Database
+*.db
